@@ -1,0 +1,31 @@
+{
+  "name": "lecture21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run migration:start",
+    "createdb": "npx sequelize-cli db:create",
+    "migration:start": "npx sequelize-cli db:migrate",
+    "start:dev": "nodemon -L -e ts,js --exec \"ts-node index.ts\"",
+    "start": "node build/sindex.js",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "stripe": "^8.174.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.9.6",
+    "sequelize-cli": "^6.2.0",
+    "tslib": "^2.3.1"
+  }
+}
