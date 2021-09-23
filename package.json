@@ -8,7 +8,7 @@
     "createdb": "npx sequelize-cli db:create",
     "migration:start": "npx sequelize-cli db:migrate",
     "start:dev": "nodemon -L -e ts,js --exec \"ts-node index.ts\"",
-    "start": "node build/sindex.js",
+    "start": "node build/index.js",
     "build": "tsc"
   },
   "author": "",

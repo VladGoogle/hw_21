@@ -2,12 +2,11 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "rootDir": "./src",
+      "allowJs": true,
     "outDir": "./build",
-    "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "prod_modules"]
+  "exclude": ["node_modules", "prod_modules", "front", "build" ]
 }

@@ -25,7 +25,7 @@ FROM node:14-alpine as production
 
 COPY --from=build /app/prod_modules ./node_modules
 COPY --from=build /app/build ./build
-COPY ["./src/.sequelizerc","./package.json","./"]
+COPY [".sequelizerc","./package.json","./"]
 COPY ./src ./src
 
 CMD ["npm", "run", "start"]
