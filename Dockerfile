@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package*.json .
 
-RUN npm i --only=production
+RUN npm i
 
 
 RUN mv node_modules/ prod_modules/
@@ -25,7 +25,7 @@ FROM node:14-alpine as production
 
 COPY --from=build /app/prod_modules ./node_modules
 COPY --from=build /app/build ./build
-COPY [".sequelizerc","./package.json","./"]
+COPY ["./src/.sequelizerc","./package.json","./"]
 COPY ./src ./src
 
 CMD ["npm", "run", "start"]

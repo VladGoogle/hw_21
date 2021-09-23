@@ -47,7 +47,7 @@ Customers.init(
         },
     },
     {
-        tableName: "Payments",
+        tableName: "Customers",
         sequelize, // passing the `sequelize` instance is required
     }
 );

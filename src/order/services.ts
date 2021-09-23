@@ -1,4 +1,4 @@
-import {UserDao} from "../db/db_requests";
+import { UserDao } from "../db/db_requests";
 import { CustomerObj } from "../db/models/customers";
 import { PaymentObj } from "../db/models/payments";
 
